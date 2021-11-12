@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy flatten="true" todir="/home/fernando/Documents/Git/pi4j-example-minimal/target/distribution" overwrite="true">
+    <fileset includes="*.sh" dir="assets"></fileset>
+  </copy>
+  <chmod perm="ugo+rx" includes="**/*.sh" dir="/home/fernando/Documents/Git/pi4j-example-minimal/target/distribution"/>
+</target>
+</project>
